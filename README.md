@@ -19,7 +19,7 @@ This will build with the tag using our organization's name and name for the imag
 To tag the latest stabele build you can use `docker tag <repo/image> <repo/image:version>`:
 
 ```
-docker tag smart48/smt-mysql smart48/smt-mysql:1.0
+docker tag smart48/smt-mysql smart48/smt-mysql:1.2
 ```
 
 You will on listing then see the newly added version:
@@ -48,5 +48,5 @@ docker image push smart48/smt-mysql
 if you did tag the image - and for production it is better to work with versioned images - you run the following:
 
 ```
-docker image push smart48/smt-mysql:1.0
+docker image push smart48/smt-mysql:1.2
 ```
