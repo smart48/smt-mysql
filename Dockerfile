@@ -7,15 +7,15 @@ LABEL maintainer="Mahmoud Zalt <mahmoud@zalt.me>"
 # Set Timezone
 #####################################
 
-ARG TZ=UTC
-ENV TZ UTC
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone && chown -R mysql:root /var/lib/mysql/
+# ARG TZ=UTC
+# ENV TZ UTC
+# RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone && chown -R mysql:root /var/lib/mysql/
 
-COPY my.cnf /etc/mysql/conf.d/my.cnf
+# COPY my.cnf /etc/mysql/conf.d/my.cnf
 
-RUN chmod 0444 /etc/mysql/conf.d/my.cnf
+# RUN chmod 0444 /etc/mysql/conf.d/my.cnf
 
-CMD ["mysqld"]
+# CMD ["mysqld"]
 
 # added exposed port to deployment
 # https://stackoverflow.com/a/57565545/460885
