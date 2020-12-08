@@ -17,4 +17,5 @@ RUN chmod 0444 /etc/mysql/conf.d/my.cnf
 
 CMD ["mysqld"]
 
-EXPOSE 3306
+# added exposed port to deployment
+# EXPOSE 3306
